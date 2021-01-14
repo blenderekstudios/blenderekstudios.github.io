@@ -1,214 +1,571 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Miniport by HTML5 UP
-	html5up.net | @ajlkn
+	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
-	<head>
-		<title>Miniport by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="initial-scale=1"><meta name="viewport" content="user-scalable=yes,width=device-width,initial-scale=1"><title>QNapi - program do pobierania napisów do filmów</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="index_pliki/main.css">
+		<link rel="stylesheet" href="index_pliki/zSlider.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" href="index_pliki/qnapi-48.png">
+		<style type="text/css">
+			.console {
+				background-color: #282828;
+				color: white;
+				padding: 0.6em 0.8em;
+				text-align: left;
+				text-shadow: none;
+				font-size: 8pt;
+				font-family: 'Source Code Pro', monospace;
+				line-height: 1.4em;
+				overflow-x: auto;
+			}
+			.pkgicon {
+				width:1.2em;
+				height:1.2em;
+				vertical-align: middle;
+			}
+		</style>
+	<script async="" src="index_pliki/analytics.js"></script><script src="index_pliki/jquery_002.js" id="COINWIDGETCOM_JQUERY"></script><link id="COINWIDGETCOM_STYLESHEET" rel="stylesheet" type="text/css" href="index_pliki/coin.css"></head>
+	<body class="">
 
 		<!-- Nav -->
 			<nav id="nav">
+				<a href="#top" class="image left" style="padding: 0.2em 0.2em 0.2em 0.2em; margin: 0.1em 0.1em 0.1em 0.1em;">
+					<img src="index_pliki/qnapi-48.png" alt="QNapi">
+				</a>
 				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#news" class="trn" data-trn-key="nowości">nowości</a></li>
+					<li><a href="#description" class="trn" data-trn-key="poznaj">poznaj</a></li>
+					<li><a href="#download" class="trn" data-trn-key="pobierz">pobierz</a></li>
+					<li><a href="#help" class="trn" data-trn-key="pomoc">pomoc</a></li>
+					<li><a href="#donate" class="trn" data-trn-key="wesprzyj">wesprzyj</a></li>
+					<li><a href="https://github.com/QNapi/qnapi" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="http://twitter.com/@q_napi" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a nohref="" onclick="translator.lang('en');"><img src="index_pliki/en.png" alt="English"></a></li>
+					<li><a nohref="" onclick="translator.lang('pl');"><img src="index_pliki/pl.png" alt="Polish"></a></li>
 				</ul>
 			</nav>
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
+		<!-- Top -->
+			<div class="wrapper style2 first">
+				<article class="container" id="top">
 					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+						<div class="4u 12u(mobile)">
+							<img src="index_pliki/qnapi-128.png" alt="QNapi">
 						</div>
-						<div class="col-8 col-7-large col-12-medium">
+						<div class="8u 12u(mobile)">
 							<header>
-								<h1>Hi. I'm <strong>Jane Doe</strong>.</h1>
+								<h1><strong>QNapi</strong></h1>
 							</header>
-							<p>And this is <strong>Miniport</strong>, a free, fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a> &amp; released under the <a href="http://html5up.net/license">CCA license</a>.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
+							<p>
+								<strong class="trn" data-trn-key="Program do pobierania i automatycznego dopasowywania napisów do filmów. Działa pod Linuksem, OSX i Windowsem.">Program do pobierania i automatycznego dopasowywania napisów do filmów. Działa pod Linuksem, OSX i Windowsem.</strong>
+							</p>
+
+							<a href="#download" class="button big scrolly">
+								<span class="icon fa-download"></span> <span class="trn" data-trn-key="Pobierz teraz">Pobierz teraz</span>
+							</a>
+
+							<p><span class="trn" data-trn-key="lub">lub</span> <a href="#description" class="trn" data-trn-key="dowiedz się więcej...">dowiedz się więcej...</a></p>
 						</div>
 					</div>
-				</div>
-			</article>
+				</article>
+			</div>
 
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-						<p>Odio turpis amet sed consequat eget posuere consequat.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-comments"></span>
-								<h3>Consequat lorem</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-camera-retro"></span>
-								<h3>Lorem dolor tempus</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-thumbs-up"></span>
-								<h3>Feugiat posuere</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-					</footer>
-				</div>
-			</article>
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
-					</header>
+		<!-- Nowości -->
+			<div class="wrapper style4">
+				<header>
+					<h2 class="trn" data-trn-key="Nowości">Nowości</h2>
+				</header>
+				<article class="container 60%" id="news">
 					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Magna feugiat</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Veroeros primis</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Lorem ipsum</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Tempus dolore</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								<h3><a href="#">Feugiat aliquam</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-								<h3><a href="#">Sed amet ornare</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article>
+						<div class="6u 12u(mobile)">
+							<table class="default" style="text-align: left">
+								<tbody><tr>
+									<td><u>19.05.2017</u></td>
+									<td>
+										<span class="trn" data-trn-key="QNapi 0.2.3 wydane. Program został przetłumaczony na jęz. angielski i włoski.">QNapi 0.2.3 wydane. Program został przetłumaczony na jęz. angielski i włoski.</span>
+										<a href="https://github.com/QNapi/qnapi/releases/tag/0.2.3" class="trn" data-trn-key="Pełna lista zmian">Pełna lista zmian</a>
+									</td>
+								</tr>
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
+								<tr>
+									<td><u>22.10.2016</u></td>
+									<td>
+										<span class="trn" data-trn-key="QNapi w wersji 0.2.2 wydane.">QNapi w wersji 0.2.2 wydane.</span>
+										<a href="https://github.com/QNapi/qnapi/releases/tag/0.2.2" class="trn" data-trn-key="Pełna lista zmian">Pełna lista zmian</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td><u>06.01.2016</u></td>
+									<td>
+										<span class="trn" data-trn-key="QNapi w wersji 0.2.1 wydane.">QNapi w wersji 0.2.1 wydane.</span>
+										<a href="https://github.com/QNapi/qnapi/releases/tag/0.2.1" class="trn" data-trn-key="Pełna lista zmian">Pełna lista zmian</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td><u>22.11.2015</u></td>
+									<td>
+										<span class="trn" data-trn-key="QNapi 0.2.0 wydane! W tej wersji dużo poprawek do błędów znalezionych przez użytkowników, wsparcie dla ekranów retina na OSX i możliwośc włączenia cichego trybu przy pobieraniu napisów z menu kontekstowego.">QNapi
+ 0.2.0 wydane! W tej wersji dużo poprawek do błędów znalezionych przez 
+użytkowników, wsparcie dla ekranów retina na OSX i możliwośc włączenia 
+cichego trybu przy pobieraniu napisów z menu kontekstowego.</span>
+										<a href="https://github.com/QNapi/qnapi/releases/tag/0.2.0" class="trn" data-trn-key="Pełna lista zmian">Pełna lista zmian</a>
+									</td>
+								</tr>
+
+								<!-- <tr>
+									<td><u>26.08.2015</u></td>
+									<td>
+										Nowa wersja QNapi - 0.1.9! A w niej długo oczekiwana możliwość konwersji pomiędzy formatami napisów.
+										<a href="https://github.com/QNapi/qnapi/releases/tag/0.1.9">Pełna lista zmian</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td><u>08.08.2015</u></td>
+									<td>
+										QNapi 0.1.8 już dostępne! W nowej wersji m.in. obsługa zapasowego języka pobierania napisów i poprawki wielu znalezionych błędów.
+										<a href="https://github.com/QNapi/qnapi/releases/tag/0.1.8">Pełna lista zmian</a>
+									</td>
+								</tr>
+ 								<tr>
+									<td><u>25.07.2015</u></td>
+									<td>
+										Wydano wersję 0.1.7 wprowadzającą m.in. QT5 i silnik dla Napisy24.
+										<a href="https://github.com/QNapi/qnapi/releases/tag/0.1.7">Pełna lista zmian</a>
+									</td>
+								</tr> -->
+							</tbody></table>
+						</div>
+						<div class="6u 12u(mobile)">
+							<header>
+								<h4 class="trn" data-trn-key="Chcę otrzymywać powiadomienia o nowych wersjach">Chcę otrzymywać powiadomienia o nowych wersjach</h4>
+							</header>
+
+							<div class="row">
+								<div class="12u">
+
+
+<form action="http://github.us11.list-manage.com/subscribe/post?u=50ed04413af6868d32e22f940&amp;id=a0090885a2" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+	<div class="row">
+		<div class="12u">
+			<input type="text" name="EMAIL" placeholder="e-mail" required="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="12u">
+			<button type="submit" name="subscribe" class="buttoni big alt trn" data-trn-key="Zapisz">Zapisz</button>
+		</div>
+	</div>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;">
+    	<input type="text" name="b_50ed04413af6868d32e22f940_a0090885a2" tabindex="-1">
+    </div>
+</form>
 								</div>
-							</form>
+							</div>
+
 						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
+					</div>
+				</article>
+			</div>
+
+		<!-- Poznaj -->
+			<div class="wrapper style1">
+				<article id="description" class="container 85%">
+					<header>
+						<h2 class="trn" data-trn-key="Poznaj QNapi">Poznaj QNapi</h2>
+						<p class="trn" data-trn-key="Program QNapi służy do automatycznego pobierania i dopasowywania napisów do konkretnego pliku z filmem. W odróżnieniu od podobnych programów, QNapi odpytuje kilka różnych baz z napisami, aby znaleźć najlepsze napisy dla Twojego filmu. Ponadto, dzięki bibliotece QT, program działa na różnych systemach operacyjnych (Windows, OSX, Linux).">Program
+ QNapi służy do automatycznego pobierania i dopasowywania napisów do 
+konkretnego pliku z filmem. W odróżnieniu od podobnych programów, QNapi 
+odpytuje kilka różnych baz z napisami, aby znaleźć najlepsze napisy dla 
+Twojego filmu. Ponadto, dzięki bibliotece QT, program działa na różnych 
+systemach operacyjnych (Windows, OSX, Linux).</p>
+
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<article class="box style1">
+									<a href="http://www.napiprojekt.pl/"><img src="index_pliki/napiprojekt.jpg" style="max-width: 15em;" alt=""></a>
+									<p><span class="trn" data-trn-key="Program korzysta z bazy napisów">Program korzysta z bazy napisów</span> <a href="http://www.napiprojekt.pl/">NapiProjekt</a></p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style1">
+									<a href="http://www.opensubtitles.org/"><img src="index_pliki/opensubtitles.gif" style="max-width: 15em;" alt=""></a>
+									<p><span class="trn" data-trn-key="Program korzysta z bazy napisów">Program korzysta z bazy napisów</span> <a href="http://www.opensubtitles.org/">OpenSubtitles</a></p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style1">
+									<a href="http://www.napisy24.pl/"><img src="index_pliki/napisy24.gif" style="max-width: 15em;" alt="Napisy24"></a>
+									<p><span class="trn" data-trn-key="Program korzysta z bazy napisów">Program korzysta z bazy napisów</span> <a href="http://www.napisy24.pl/">Napisy24</a></p>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="7u 12u(mobile)">
+								<h4 class="trn" data-trn-key="Możliwości programu">Możliwości programu</h4>
+								<ul>
+									<li class="trn" data-trn-key="dopasowywanie napisów do konkretnego pliku filmowego">dopasowywanie napisów do konkretnego pliku filmowego</li>
+									<li class="trn" data-trn-key="automatyczne dopasowanie najlepszych napisów">automatyczne dopasowanie najlepszych napisów</li>
+									<li class="trn" data-trn-key="wybór formatu napisów (SRT, mDVD, TMP, MPL2), możliwość ręcznej konwersji">wybór formatu napisów (SRT, mDVD, TMP, MPL2), możliwość ręcznej konwersji</li>
+									<li class="trn" data-trn-key="możliwość wyboru napisów, gdy znaleziono kilka pasujących">możliwość wyboru napisów, gdy znaleziono kilka pasujących</li>
+									<li class="trn" data-trn-key="wybór języka napisów spośród kilkudziesięciu obsługiwanych">wybór języka napisów spośród kilkudziesięciu obsługiwanych</li>
+									<li class="trn" data-trn-key="skanowanie katalogów i masowe dopasowywanie napisów do wielu filmów">skanowanie katalogów i masowe dopasowywanie napisów do wielu filmów</li>
+									<li class="trn" data-trn-key="przetwarzanie napisów: zmiana kodowania znaków, ustawianie uprawnień">przetwarzanie napisów: zmiana kodowania znaków, ustawianie uprawnień</li>
+									<li class="trn" data-trn-key="działanie z terminala (na systemach Linux/Unix)">działanie z terminala (na systemach Linux/Unix)</li>
+								</ul>
+							</div>
+							<div class="5u 12u(mobile)">
+								<div id="gallery1">
+								  <ul class="z-slide-content">
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/lin01.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/win04.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/lin02.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/lin06.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/osx01.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/win06.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/osx02.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/lin05.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(0px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/osx06.png" alt="" class="image fit">
+								    </li>
+								 	<li class="z-slide-item" style="transform: translate3d(485px, 0px, 0px);">
+										<img src="index_pliki/lin04.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(485px, 0px, 0px);">
+										<img src="index_pliki/win01.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(485px, 0px, 0px);">
+										<img src="index_pliki/osx03.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-485px, 0px, 0px);">
+										<img src="index_pliki/win05.png" alt="" class="image fit">
+								    </li>
+								  </ul>
+								<div class="z-slide-indicator" style="left: 96.9px;"><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot active"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span></div></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="6u 12u(mobile)">
+								<div id="gallery2">
+								  <ul class="z-slide-content">
+								    <li class="z-slide-item" style="transform: translate3d(-588px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/win02.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-588px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/lin03.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(0px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/osx04.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(588px, 0px, 0px);">
+										<img src="index_pliki/win03.png" alt="" class="image fit">
+								    </li>
+								    <li class="z-slide-item" style="transform: translate3d(-588px, 0px, 0px); transition: transform 0.2s linear 0s;">
+										<img src="index_pliki/osx05.png" alt="" class="image fit">
+								    </li>
+								  </ul>
+								<div class="z-slide-indicator" style="left: 238px;"><span class="z-slide-dot"></span><span class="z-slide-dot"></span><span class="z-slide-dot active"></span><span class="z-slide-dot"></span><span class="z-slide-dot"></span></div></div>
+							</div>
+							<div class="6u 12u(mobile)">
+								<h4 class="trn" data-trn-key="Cechy programu">Cechy programu</h4>
+								<ul>
+									<li class="trn" data-trn-key="łatwa, intuicyjna obsługa">łatwa, intuicyjna obsługa</li>
+									<li class="trn" data-trn-key="duża skuteczność w wyszukiwaniu napisów">duża skuteczność w wyszukiwaniu napisów</li>
+									<li class="trn" data-trn-key="projekt open-source">projekt open-source</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p class="trn" data-trn-key="Z QNapi oszczędzasz czas potrzebny na znalezienie napisów do filmu.">Z QNapi oszczędzasz czas potrzebny na znalezienie napisów do filmu.</p>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Pobierz -->
+			<div class="wrapper style3">
+				<article id="download">
+					<header>
+						<h2 class="trn" data-trn-key="Pobierz program">Pobierz program</h2>
+						<p class="trn" data-trn-key="wybierz wersję dla swojego systemu operacyjnego">wybierz wersję dla swojego systemu operacyjnego</p>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<section class="box style1">
+									<span class="icon featured fa-windows"></span>
+									<h3>Windows</h3>
+									<p>
+										<strong>0.2.3</strong> - <span class="trn" data-trn-key="instalator (.exe)">instalator (.exe)</span>
+										<a href="https://github.com/QNapi/qnapi/releases/download/0.2.3/QNapi-0.2.3-setup.exe" class="button scrolly">
+											<span class="icon fa-download"></span> <span class="trn" data-trn-key="Pobierz">Pobierz</span>
+										</a>
+									</p>
+
+									<p>
+										<strong>0.2.3</strong> - <span class="trn" data-trn-key="archiwum przenośne (.zip)">archiwum przenośne (.zip)</span>
+										<a href="https://github.com/QNapi/qnapi/releases/download/0.2.3/QNapi-0.2.3-portable.zip" class="button scrolly">
+											<span class="icon fa-download"></span> <span class="trn" data-trn-key="Pobierz">Pobierz</span>
+										</a>
+									</p>
+									
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="box style1">
+									<span class="icon featured fa-apple"></span>
+									<h3>OSX</h3>
+									<p>
+										<strong>0.2.3</strong> - <span class="trn" data-trn-key="archiwum (.dmg)">archiwum (.dmg)</span>
+										<a href="https://github.com/QNapi/qnapi/releases/download/0.2.3/QNapi-0.2.3.dmg" class="button scrolly">
+											<span class="icon fa-download"></span> <span class="trn" data-trn-key="Pobierz">Pobierz</span>
+										</a>
+									</p>
+									<p style="margin-bottom: 0.5em">
+										<span class="trn" data-trn-key="Lub jeśli korzystasz z">Lub jeśli korzystasz z</span>
+										<nobr>
+											<a href="http://brew.sh/"><img src="index_pliki/homebrew.png" class="pkgicon">Homebrew</a><a href="http://caskroom.github.io/">Cask</a>:
+										</nobr>
+									</p>
+									<pre class="code console">brew cask install qnapi</pre> 
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="box style1">
+									<span class="icon featured fa-linux"></span>
+									<h3>Linux</h3>
+									<p>
+										<strong>0.2.3</strong> - <span class="trn" data-trn-key="archiwum źródłowe (.tar.gz)">archiwum źródłowe (.tar.gz)</span>
+										<a href="https://github.com/QNapi/qnapi/releases/download/0.2.3/qnapi-0.2.3.tar.gz" class="button scrolly">
+											<span class="icon fa-download"></span> <span class="trn" data-trn-key="Pobierz">Pobierz</span>
+										</a>
+									</p>
+									<p>
+										<strong>0.2.3</strong> - <span class="trn" data-trn-key="plik binarny AppImage (x86_64)">plik binarny AppImage (x86_64)</span>
+										<a href="https://github.com/QNapi/qnapi/releases/download/0.2.3/QNapi-0.2.3-x86_64.AppImage" class="button scrolly">
+											<span class="icon fa-download"></span> <span class="trn" data-trn-key="Pobierz">Pobierz</span>
+										</a>
+									</p>
+									<p style="margin-bottom: 0.5em">
+										<a href="https://aur.archlinux.org/packages/qnapi">PKGBUILD</a> <span class="trn" data-trn-key="dla">dla</span>
+										<nobr>
+											<a href="http://www.archlinux.org/"><img src="index_pliki/archlinux.png" class="pkgicon">ArchLinux</a>.
+										</nobr>
+										
+									</p>
+									<p style="margin-bottom: 0.5em">
+										<span class="trn" data-trn-key="Pakiety &lt;a href=&quot;https://launchpad.net/~krzemin/+archive/ubuntu/qnapi&quot;&gt;PPA&lt;/a&gt; dla">Pakiety <a href="https://launchpad.net/~krzemin/+archive/ubuntu/qnapi">PPA</a> dla</span>
+										<nobr>
+											<a href="http://www.ubuntu.com/">
+											<img src="index_pliki/ubuntu.png" class="pkgicon">Ubuntu</a>:
+										</nobr>
+									</p>
+<pre class="code console">sudo add-apt-repository ppa:krzemin/qnapi
+sudo apt-get update
+sudo apt-get install qnapi</pre> 
+
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p><span class="trn" data-trn-key="Zobacz także">Zobacz także</span> <a href="https://github.com/QNapi/qnapi/releases/" class="trn" data-trn-key="pozostałe wydania">pozostałe wydania</a></p>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Help -->
+			<div class="wrapper style1">
+				<article id="help" class="container 90%">
+					<header>
+						<h2 class="trn" data-trn-key="Pomoc">Pomoc</h2>
+					</header>
+					<div>
+						<div class="row">
+							<div class="6u 12u(mobile)">
+								<h4 class="trn" data-trn-key="Jeśli potrzebujesz pomocy...">Jeśli potrzebujesz pomocy...</h4>
+								<ul class="default" style="text-align: left">
+									<!--<li>
+										przejrzyj oficjalną <a href="https://github.com/QNapi/qnapi/wiki">Dokumentację</a> i FAQ
+									</li>-->
+									<li class="trn" data-trn-key="sprawdź czy ktoś miał (lub nadal ma) podobny problem, przeglądając &lt;a href=&quot;https://github.com/QNapi/qnapi/issues?q=is%3Aissue&quot;&gt;zgłoszenia&lt;/a&gt;">sprawdź czy ktoś miał (lub nadal ma) podobny problem, przeglądając <a href="https://github.com/QNapi/qnapi/issues?q=is%3Aissue">zgłoszenia</a></li>
+									<li class="trn" data-trn-key="jeśli nie rozwiążesz problemu, &lt;a href=&quot;https://github.com/QNapi/qnapi/issues/new&quot;&gt;dodaj&lt;/a&gt;nowe zgłoszenie, dokładnie opisując swój problem i podając jak najwięcej informacji">jeśli nie rozwiążesz problemu, <a href="https://github.com/QNapi/qnapi/issues/new">dodaj</a>nowe zgłoszenie, dokładnie opisując swój problem i podając jak najwięcej informacji</li>
+								</ul> 
+							</div>
+
+							<div class="6u 12u(mobile)">
+								<h4 class="trn" data-trn-key="Jeśli znajdziesz błąd w programie...">Jeśli znajdziesz błąd w programie...</h4>
+								<ul class="default" style="text-align: left">
+									<li class="trn" data-trn-key="&lt;a href=&quot;https://github.com/QNapi/qnapi/issues?q=is%3Aissue+label%3Abug&quot;&gt;sprawdź&lt;/a&gt; czy ktoś inny nie zgłosił podobnego błędu i czy nie został już naprawiony"><a href="https://github.com/QNapi/qnapi/issues?q=is%3Aissue+label%3Abug">sprawdź</a> czy ktoś inny nie zgłosił podobnego błędu i czy nie został już naprawiony</li>
+									<li class="trn" data-trn-key="jeśli nie, &lt;a href=&quot;https://github.com/QNapi/qnapi/issues/new&quot;&gt;dodaj&lt;/a&gt; nowe zgłoszenie dokładnie opisując okoliczności wystąpienia błędu, podając szczegółowe informacje o wersji programu, systemie, itd.">jeśli nie, <a href="https://github.com/QNapi/qnapi/issues/new">dodaj</a>
+ nowe zgłoszenie dokładnie opisując okoliczności wystąpienia błędu, 
+podając szczegółowe informacje o wersji programu, systemie, itd.</li>
+								</ul> 
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Donate -->
+			<div class="wrapper style4">
+				<article id="donate" class="container">
+					<header>
+						<h3 class="trn" data-trn-key="Wsparcie">Wsparcie</h3>
+						<p class="trn" data-trn-key="Jeśli chcesz wspomóc dalszy rozwój programu, możesz to zrobić kilkając w poniższy przycisk.">Jeśli chcesz wspomóc dalszy rozwój programu, możesz to zrobić kilkając w poniższy przycisk.</p>
+					</header>
+
+					<div>
+						<div class="row">
+							<div class="4u">
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="index_pliki/btn_donateCC_LG.png" name="submit" alt="PayPal — Płać wygodnie i bezpiecznie" border="0">
+<img alt="" src="index_pliki/pixel.gif" euv9d98bk="" width="1" height="1" border="0">
+</form>
+
+							</div>
+
+							<script src="index_pliki/coin.js"></script>
+
+							<div class="4u">
+								<script>
+									CoinWidgetCom.go({
+										wallet_address: '12Z8ZoaSLwtpYQoKnnYrFmgR9M3g51Ubh7',
+										currency : 'bitcoin',
+										counter : 'hide',
+										lbl_button : 'Donate with BTC',
+										lbl_count : 'payments',
+										lbl_amount : 'BTC',
+										lbl_address : 'QNapi Bitcoin donation address:',
+										qrcode : false,
+										decimals : 0
+									});
+								</script><span data-coinwidget-instance="0" class="COINWIDGETCOM_CONTAINER"><a class="COINWIDGETCOM_BUTTON_BITCOIN" href="#"><img src="index_pliki/icon_bitcoin.png"><span>Donate with BTC</span></a></span>
+							</div>
+
+							<div class="4u">
+								<script>
+									CoinWidgetCom.go({
+										wallet_address: 'LM4mQH1JaMsvWCBZR4txR1Q9Qr2yK7BxcW',
+										currency : 'litecoin',
+										counter : 'hide',
+										lbl_button : 'Donate with LTC',
+										lbl_count : 'payments',
+										lbl_amount : 'LTC',
+										lbl_address : 'QNapi Litecoin donation address:',
+										qrcode : false,
+										decimals : 0
+									});
+								</script><span data-coinwidget-instance="1" class="COINWIDGETCOM_CONTAINER"><a class="COINWIDGETCOM_BUTTON_LITECOIN" href="#"><img src="index_pliki/icon_litecoin.png"><span>Donate with LTC</span></a></span>
+							</div>
+
 						</div>
 					</div>
 					<footer>
 						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>© QNapi 2008-2017. All rights reserved.</li><li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
 						</ul>
 					</footer>
-				</div>
-			</article>
+				</article>
+			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="index_pliki/jquery_004.js"></script>
 
-	</body>
-</html>
+			<script src="index_pliki/jquery_003.js"></script>
+			<script src="index_pliki/translation.js"></script>
+			<script>
+				var browserLang = window.navigator.userLanguage || window.navigator.language;
+				var trnLang = browserLang.toLowerCase().indexOf("pl") >= 0 ? "pl" : "en";
+			    var translator = $('body').translate({lang: trnLang, t: dict});
+			</script>
+
+			<script src="index_pliki/jquery.js"></script>
+			<script src="index_pliki/skel.js"></script>
+			<script src="index_pliki/skel-viewport.js"></script>
+			<script src="index_pliki/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="index_pliki/main.js"></script>
+			<script src="index_pliki/zSlider.js"></script>
+
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-65019497-1', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
+
+			<script>
+				var slider1 = new Slider('#gallery1', '.z-slide-item', {
+				    // initial slide
+				    'current': 0,
+				    // animation speed
+				    'duration': 0.2, 
+				    // min percentage to trigger the slide
+				    'minPercentToSlide': null,
+				    // auto play
+				    'autoplay': true,
+				    // slide direction
+				    'direction': 'left',
+				    // autoplay interval
+				    'interval': 6
+				});
+				var slider2 = new Slider('#gallery2', '.z-slide-item', {
+				    // initial slide
+				    'current': 0,
+				    // animation speed
+				    'duration': 0.2, 
+				    // min percentage to trigger the slide
+				    'minPercentToSlide': null,
+				    // auto play
+				    'autoplay': true,
+				    // slide direction
+				    'direction': 'left',
+				    // autoplay interval
+				    'interval': 7
+				});
+
+			</script>
+	
+
+
+</body></html>
