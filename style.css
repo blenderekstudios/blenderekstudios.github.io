@@ -1,0 +1,30 @@
+h1
+{
+    font-size:8vw;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#eee;
+}
+h2
+{
+    font-size:1vw;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#eee;
+}
+a
+{
+    display: block;
+    text-decoration: none;
+    background-color:rgb(52, 179, 52);
+    color:#ddd;
+    width: 30vw;
+    height: 10vw;
+    border-radius: 2vw;
+    position: absolute;
+    top: 50vh;
+}
+body
+{
+    background-color: #000;
+}
